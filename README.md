@@ -31,7 +31,6 @@ lab2/
 │
 ├── app.py
 ├── database.py
-├── requirements.txt
 │
 ├── templates/
 │   ├── login.html
@@ -56,7 +55,6 @@ lab2/
 - `templates/` — HTML-страницы приложения.
 - `exploits/` — Python-скрипты для демонстрации эксплуатации уязвимостей.
 - `patches/` — DIFF-файлы с исправлениями обнаруженных уязвимостей.
-- `requirements.txt` — список необходимых библиотек.
 
 ### 4. Запуск приложения
 
