@@ -1,0 +1,16 @@
+diff --git a/app.py b/app.py
+--- a/app.py
++++ b/app.py
+@@ -17,9 +17,8 @@ def login():
+         conn = get_db()
+         cursor = conn.cursor()
+
+-        # Уязвимость SQL Injection
+-        query = f"SELECT * FROM users WHERE username='{username}' AND password='{password}'"
+-
+-        cursor.execute(query)
++        # Исправление SQL Injection
++        query = "SELECT * FROM users WHERE username=? AND password=?"
++        cursor.execute(query, (username, password))
+         user = cursor.fetchone()
+         conn.close()

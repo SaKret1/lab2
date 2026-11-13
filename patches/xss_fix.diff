@@ -1,0 +1,13 @@
+diff --git a/templates/search.html b/templates/search.html
+--- a/templates/search.html
++++ b/templates/search.html
+@@ -10,7 +10,7 @@
+ <body>
+     <h2>Результат поиска</h2>
+
+-    <p>Вы искали: {{ results | safe }}</p>
++    <p>Вы искали: {{ results }}</p>
+
+     <a href="/dashboard">Назад</a>
+ </body>
+</html>
